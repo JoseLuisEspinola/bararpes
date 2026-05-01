@@ -2,25 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
-    --color00: #190124;
-    /* Títulos (h1, h2) */
-    --color01: #f8f8f8;           /* Blanco casi puro, máxima legibilidad */
-    /* Subtítulos (h3, h4) */
-    --color02: #c4c2c2;            /* Gris claro, mantiene contraste sin competir */
-    /* Sub-subtítulos / detalles (h5, h6, small) */
-    --color03: #8a8989;            /* Gris metálico, ideal para descripciones o etiquetas */
-    /* Botón principal */
-    --color04: #ff2a2a;            /* Rojo fuego, fuerte y llamativo */
-    /* --color05: #000013; */
-    --color05: #ffffff;             /* Texto blanco para contraste total */
-    /* Hover botón */
-    --color06: #ff5555;          /* Rojo claro, efecto visual al pasar el mouse */
-    --color07: #ffffff;
+    /* COLORES PRINCIPALES (BRAD CORE)*/
+    --azul_profundo:     #0a3d62;   /*(confianza, profesionalismo)*/
+    --azul_profundo_02:  #0d4f7e;
+    --azul_medio:        #1e5f74;   /*(dinamismo, frescura)*/
+    --celeste_claro:     #a3d2ca;   /*(tranquilidad, contraste suave)*/
+    --verde_azulado:     #2e8b57;   /*(energía, movimiento)*/
 
-    --color08: #d8d8d8;
-    --color09: #c0614d;
-    --color10: #e8ac8c;
+    /* COLORES SECUNDARIOS (COMPLEMENTARIOS)*/
+    --gris_oscuro:       #2f2f2f;   /*(texto principal, elegancia)*/
+    --gris_medio:        #6c757d;   /*(texto secundario, íconos)*/
+    --gris_claro:        #e9e6ef;   /*(fondos suaves)*/
+    --blanco:            #ffffff;   /*(fondos suaves)*/
+
+    /* COLORES DE ACENTO (ACCIONES Y BOTONES)*/
+    --naranja_vibrante:  #f77f00;   /*(llamadas a la acción, botones)*/
+    --naranja_vibrante_02: #f59025;
+    --amarillo_calido:   #ffd60a;   /*(resaltados, íconos)*/
+    --rojo_suave:        #e63946;   /*(alertas, advertencias)*/
+
+    /* TONALIDADES ADICIONALES (variaciones útiles)*/
+    --azul_oscuro_extra: #052c46;   /*(tonalidad más oscura del azul principal)*/
+    --azul_claro_extra:  #74c0fc;   /*(tonalidad más clara del azul principal)*/
+    --verde_claro:       #81c784;   /*(tonalidad más clara del verde principal)*/
+    --gris_azulado:      #adb5bd;   /*(tonalidad gris con matiz azulado)*/
+    --gris_azulado_02:   #97a6b4;
+    --negro_suave:       #212529;   /*(tonalidad negra suave)*/
+    --negro_comun:       #000000;   /*(tonalidad negra común)*/
 }
+
 
 * {
     padding: 0;
@@ -47,20 +57,19 @@ nav {
     display: inline-block;
     height: 90px;
     width: 100%;
-    background-color: rgba(121, 161, 240, 0.1);
+    /*  background-color: rgba(121, 161, 240, 0.1);  */
+    background-color: var(--azul_profundo);
     backdrop-filter: blur(24px);
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25), 
                 4px 8px 32px rgba(0,0,0,0.25);
 /*                 unset 0px 0px 0px rgba(0,0,0,0.25); */
-
     transition: 0.8s;
     z-index: 100;
 }
 
-/* nav.abajo {
-    background-color: var(--color01);
-    box-shadow: 0 0 10px rgba(39, 165, 248, 0.4);
-} */
+nav.abajo {
+    background-color: var(--azul_profundo_02);
+}
 
 .enlace {
     position: absolute;
@@ -99,25 +108,25 @@ nav {
 }
 
 .main-name {
-    text-shadow: 1px 1px var(--color03);
-    color: var(--color06);
+    /* text-shadow: 1px 1px var(--color03); */
+    color: var(--naranja_vibrante);
     font-weight: bold;
     font-size: 1.6rem;
     transition: 0.5s;
 } 
 
+.main-name:hover {
+    /* text-shadow: 1px 1px var(--color06); */
+    color: var(--amarillo_calido);
+    transition: 0.5s;
+}
+ 
 .main-namesito {
     margin-top: 4px;
-    color: var(--color00);
-    text-shadow: 1px 1px 0px var(--color05);
+    color: var(--rojo_suave);
+    text-shadow: 1px 1px 0px var(--blanco);
     font-size: 0.88rem;
 }
-
-.main-name:hover {
-    text-shadow: 1px 1px var(--color06);
-    color: var(--color03);
-    transition: 0.5s;
-} 
 
 nav ul {
     float: right;
@@ -133,20 +142,25 @@ nav ul li {
 
 nav ul li a {
     position: relative;
-    color: var(--color00);
-    text-shadow: 1px 1px 0px var(--color01);
+    color: var(--blanco);
+    /* text-shadow: 1px 1px 0px var(--color01); */
     font-size: 16px;
     font-weight: 600;
     padding: 0 12px;
     transition: background 0.5s;
 }
 
+li a:hover {
+    /* color: var(--color06); */
+    color: var(--naranja_vibrante);
+}
+
 nav.abajo ul li a {
-    color: var(--color04);
+    color: var(--naranja_vibrante);
 }
 
 nav.abajo ul li a:hover {
-    color: var(--color10);
+    color: var(--blanco);
 }
 
 .fa-home {
@@ -157,7 +171,7 @@ nav.abajo ul li a:hover {
 li a:after {
     content: "";
     position: absolute;
-    background-color: var(--color04);
+    background-color: var(--celeste_claro);
     height: 2px;
     width: 0;
     left: 0;
@@ -165,21 +179,17 @@ li a:after {
     transition: 0.5s;
 }
 
-li a:hover {
-    color: var(--color03);
+li a:hover:after {
+    width: 100%;
 }
 
 li a:focus {
     color: var(--color03);
 }
 
-li a:hover:after {
-    width: 100%;
-}
-
 .checkbtn {
     font-size: 34px;
-    color: var(--color00);
+    color: var(--blanco);
     float: right;
     line-height: 80px;
     margin-right: 20px;
@@ -189,7 +199,7 @@ li a:hover:after {
 }
 
 nav.abajo .checkbtn {
-    color: var(--color04);
+    color: var(--naranja_vibrante);
 }
 
 #check {
@@ -242,11 +252,12 @@ nav.abajo .checkbtn {
 
 .h1-zona1 h1 {
     font-size: 4.4rem;  
+    /* font-size: clamp(2.5rem, 3vw, 4.4rem); */
     text-align: center;
-    color: #430261;
-    text-shadow: 2px 2px 0px var(--color00),
-                 0px 0px 20px var(--color05),
-                 0px 0px 30px var(--color05);
+    color: var(--naranja_vibrante);
+    text-shadow: 2px 2px 0px var(--blanco),
+                 0px 0px 20px var(--blanco),
+                 0px 0px 30px var(--blanco);
     font-family: 'Cormorant', Georgia, 'Times New Roman', serif;
     font-weight: 600;
     font-style: normal;
@@ -259,9 +270,9 @@ nav.abajo .checkbtn {
     font-weight: 400;
     margin: 0 auto;
     text-align: center;
-    color: #000000;
-    text-shadow: 1px 1px 2px var(--color04), 
-                 0px 0px 5px #ffffff, 
+    color: var(--negro_comun);
+    text-shadow: 1px 1px 2px var(--blanco), 
+                 0px 0px 5px  var(--blanco), 
                  0px 0px 10px #ffffff,
                  0px 0px 20px #ffffff,
                  0px 0px 40px #ffffff,
@@ -270,13 +281,13 @@ nav.abajo .checkbtn {
 }
 
 .p-zona1 span {
-    color: var(--color00);
-    text-shadow: 1px 1px 0px var(--color03),
-                 0px 0px 5px #ffffff, 
-                 0px 0px 10px #ffffff,
-                 0px 0px 20px #ffffff,
-                 0px 0px 40px #ffffff,
-                 0px 0px 80px #ffffff;
+    color: var(--negro_comun);
+    text-shadow: 1px 1px 0px  var(--gris_claro),
+                 0px 0px 5px  var(--blanco), 
+                 0px 0px 10px var(--blanco),
+                 0px 0px 20px var(--blanco),
+                 0px 0px 40px var(--blanco),
+                 0px 0px 80px var(--blanco);
 }
 
 .flecha-abajo {
@@ -301,7 +312,7 @@ nav.abajo .checkbtn {
 }
 
 .flecha-abajo a {
-    color: var(--color06);
+    color: var(--naranja_vibrante);
 }
 
 
@@ -318,7 +329,7 @@ nav.abajo .checkbtn {
     padding-bottom: 40px;
     max-width: 100%;
     height: auto;
-    background-color: var(--color00);
+    background-color: var(--gris_claro);
     position: relative;
 }
 
@@ -326,7 +337,8 @@ nav.abajo .checkbtn {
     padding-bottom: 20px;
     text-align: center;
     font-size: clamp(2.4rem, 3vw, 3rem);
-    background: linear-gradient(180deg, var(--color02), var(--color09));
+    background: linear-gradient(180deg, var(--azul_medio), 
+                                        var(--celeste_claro));
     -webkit-background-clip: text; /* Necesario para navegadores WebKit */ 
     background-clip: text; /* Clip del fondo al texto */ 
     color: transparent; /* Hace el texto transparente para que el gradiente sea visible */
@@ -354,7 +366,7 @@ nav.abajo .checkbtn {
     display: grid;
     grid-template-rows: 55% 10% 25% 10%;
     border-radius: 8px;
-    background-color: var(--color02);
+    background-color: #d4d3d3;
     width: 100%;
    /*  padding-bottom: 6px; */
     object-fit: cover;
@@ -369,7 +381,7 @@ nav.abajo .checkbtn {
 }
 
 .card:hover {
-    box-shadow: 0px 1px 0px 0px var(--color10);
+    box-shadow: 0px 1px 0px 0px var(--blanco);
 }
 
 .card-img {
@@ -401,7 +413,7 @@ nav.abajo .checkbtn {
     font-size: 28px;
     margin: 0;
 
-    color: var(--color06);
+    color: var(--azul_medio);
 }
 
 .card-description {
@@ -415,7 +427,7 @@ nav.abajo .checkbtn {
 }
 
 .card-description p {
-    color: #000000;
+    color: var(--gris_oscuro);
     font-size: clamp(0.8rem, 2vw, 1rem);
     padding: 10px 0;
     line-height: 1.2;
@@ -429,7 +441,7 @@ nav.abajo .checkbtn {
 }
 
 .card-btn a {
-    background-color: var(--color09);
+    background-color: var(--azul_medio);
     font-size: clamp(0.8rem, 2vw, 1rem);
     color: #ffffff;
     padding: 4px 20px;
@@ -438,7 +450,7 @@ nav.abajo .checkbtn {
 }
 
 .card-btn a:hover {
-    background-color: var(--color10);
+    background-color: var(--gris_azulado_02);
 }
 
 
@@ -448,8 +460,7 @@ nav.abajo .checkbtn {
 .footer-container {
     width: 100%;
     height: auto;
-    color: var(--color10);
-    background-color: #000000;
+    background-color: var(--gris_azulado_02);
     /* border-top: 2px solid var(--color03); */
 }
 
@@ -467,18 +478,22 @@ nav.abajo .checkbtn {
 
 .title-box {
     padding: 20px 0px 10px;
+    color: var(--naranja_vibrante);
+    text-shadow: 0 0 10px var(--azul_oscuro_extra),
+                 0 0 20px var(--azul_oscuro_extra),
+                 0 0 30px var(--azul_oscuro_extra)
 }
 
 /* Horarios */
 .dias {
-    color: var(--color08);
-    text-shadow: 0 0 10px #ffffff,
-                 0 0 20px #ffffff,
-                 0 0 30px #ffffff;
+    color: var(--azul_oscuro_extra);
+    text-shadow: 0 0 10px var(--gris_claro),
+                 0 0 20px var(--gris_claro),
+                 0 0 30px var(--gris_claro);
 }
 
 .horas {
-    color: var(--color08);
+    color: var(--blanco);
 }
 
 /* Enlaces */
@@ -487,26 +502,29 @@ nav.abajo .checkbtn {
 }
 
 .box-footer li a {
-    color: var(--color08);
+    color: var(--blanco);
 }
 
 .box-footer li a:hover {
-    color: #2e5f8c;
-    color: var(--color04);
+    color: var(--amarillo_calido);
 }
 
 /* Otros datos */
 .otros-datos a {
-    color: var(--color08);
+    color: var(--blanco);
+}
+
+.otros-datos a:hover {
+    color: var(--amarillo_calido);
 }
 
 .telefono, .direccion {
     margin: 10px 0px 10px;
-    color: var(--color05);
+    color: var(--blanco);
 }
 
 .otros-datos .terminos {
-    color: #f3eec3;
+    color: var(--amarillo_calido);
 }
 
 /* Sociales */
@@ -518,7 +536,7 @@ nav.abajo .checkbtn {
     padding: 0 4px;
     /* display: inline-block; */
     display: flex;
-    color: var(--color08);
+    color: var(--blanco);
     margin-top: 4px;
 }
 
@@ -530,23 +548,22 @@ nav.abajo .checkbtn {
     transition: 0.5s;
 }
 
-.linkedin:hover, .github:hover,
-.facebook:hover, .whatsapp:hover {
-    box-shadow: 1px 1px 14px 0 #abacaf, -1px -1px 14px 0 #abacaf;
-
+.sociales a:hover {
+    color: var(--amarillo_calido);
 }
 
 /* Copyright */
 .copy {
     text-align: center;
     padding: 16px 0;
-    color: var(--color09);
+    color: var(--rojo_suave);
     font-size: clamp(0.7rem, 3vw, 1rem);
 }
 
 .copyright a {
-    color: var(--color09);
+    color: var(--rojo_suave);
 }
+
 
 
 

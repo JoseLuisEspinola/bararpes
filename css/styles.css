@@ -141,7 +141,6 @@ nav ul li {
 
 nav ul li a {
     position: relative;
-    /* color: var(--color00); */
     color: var(--blanco);
     /* text-shadow: 1px 1px 0px var(--color01); */
     font-size: 16px;
@@ -179,12 +178,12 @@ li a:after {
     transition: 0.5s;
 }
 
-li a:focus {
-    color: var(--color03);
-}
-
 li a:hover:after {
     width: 100%;
+}
+
+li a:focus {
+    color: var(--color03);
 }
 
 .checkbtn {
@@ -255,9 +254,9 @@ nav.abajo .checkbtn {
     /* font-size: clamp(2.5rem, 3vw, 4.4rem); */
     text-align: center;
     color: var(--naranja_vibrante);
-    text-shadow: 2px 2px 0px var(--color00),
-                 0px 0px 20px var(--color05),
-                 0px 0px 30px var(--color05);
+    text-shadow: 2px 2px 0px var(--blanco),
+                 0px 0px 20px var(--blanco),
+                 0px 0px 30px var(--blanco);
     font-family: 'Cormorant', Georgia, 'Times New Roman', serif;
     font-weight: 600;
     font-style: normal;
