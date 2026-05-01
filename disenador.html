@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="Imagen/jpg" href="/img/logo-alquileres.png">
+    <link rel="stylesheet" href="/css/disenador.css">
+    <title>Alquileres</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Incluir la biblioteca de ScrollReveal --> 
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <!-- Barra de navegacion o NavBar -->
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+        <a href="disenador.html" class="enlace">
+            <img src="./img/logo-alquileres.png" class="logo" alt="Imagen Logo">
+            <div class="names">
+                <span class="main-name">Sólo Alquiler</span>
+                <span class="main-namesito">Más que un techo, un hogar</span>
+            </div>
+        </a>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-home" title="Inicio"></i></a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="index.html#section-departamentos">Disponibles</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="fotogaleria.html">Fotogaleria</a></li>
+            <li><a href="precios.html">Precios</a></li>
+            <li><a href="index.html#section-form">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- JavaScript donde se captura la parte de arriba de la pagina: header-->
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("nav");
+            header.classList.toggle("abajo", window.scrollY>0);
+        })
+    </script>    
+
+    <!-- Zona central de la primer pagina -->
+    <section id="zona1">
+        <!-- Integrantes -->
+        <div class="caja">
+            <h1>Sólo Alquiler</h1>
+            <h2>Alquileres de Departamentos</h2>
+            <ul class="lista-integrantes">
+                <li class="integrante">Diseñado por:</li>
+                <li class="integrante">José Luis Espinola</li>
+            </ul>
+        </div>
+
+        <!-- <div class="presentacio -->
+        <div class="contanier-nombres">
+            <div class="nombre1">
+                DISEÑADOR
+            </div>
+            <div class="nombre2">
+                JOSE LUIS
+            </div>
+        </div>
+
+        <section class="texto-zoom">
+            <p class="tracking">SOLO ALQUILER</p>
+        </section>
+
+
+        <!-- Musica de fondo. Lo podría haber puesto en cualquier lugar. Lo puse SIN la opción de mostrar los controles -->
+        <audio id="background-music" src="/audio/buena-onda.mp3" autoplay loop>
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+
+        <div class="btn-sino active" id="volume-btn"></div>
+
+
+        <div class="redes">
+            <a class="btn-redes" href="https://www.facebook.com/joseluis.espinola1" target="_blank" title="Ir a Facebook">Facebook</a>
+            <a class="btn-redes" href="https://www.linkedin.com/in/jose-luis-espinola-a036b7125/" target="_blank" title="Ir a LinkedIn">Linkedin</a>
+            <a class="btn-redes" href="https://github.com/JoseLuisEspinola" target="_blank" title="Ir a GitHub">Git Hub</a>
+            <a class="btn-redes" href="https://api.whatsapp.com/send?phone=+543487616158&text=Hola%2C%20me%20gustaría%20realizar%20una%20página%20web...%20podrías%20contarme?" target="_blank" title="Ir a Whatsapp">Whatsapp</a>
+        </div>
+    </section>
+
+    <!-- JavaScript para establecer el volumen inicial -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var audio = document.getElementById('background-music');
+            audio.volume = 0.5; // Establecí el volumen al 50%
+
+            var toggleButton = document.getElementById('volume-btn');
+            var isMuted = false;
+            
+            toggleButton.addEventListener('click', function () {
+                isMuted = !isMuted; // Cambiar el estado de mute
+                audio.volume = isMuted ? 0 : 0.5; // Silenciar o restaurar el volumen
+
+                // Cambiar el estado del botón
+                toggleButton.classList.toggle('active', !isMuted);
+            });
+        });
+    </script>
+    <script src="/js/menu.js"></script>
+
+    <script src="https://kit.fontawesome.com/81581fb069.js"
+        crossorigin="anonymcus">
+    </script>
+</body>
+</html>

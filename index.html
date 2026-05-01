@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="Imagen/jpg" href="/img/BarArpes-logo.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>BarArpes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Incluir la biblioteca de ScrollReveal --> 
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <!-- Barra de navegacion o NavBar -->
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="./img/BarArpes-logo.png" class="logo" alt="Imagen Logo">
+            <div class="names">
+                <span class="main-name">BarArpes</span>
+                <span class="main-namesito">¡Movemos tu mundo!</span>
+            </div>
+        </a>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Galería</a></li>
+            <li><a href="#">Precios</a></li>
+            <li><a href="#section-nosotros">Nosotros</a></li>
+            <li><a href="#section-form">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- JavaScript donde se captura la parte de arriba de la pagina: header-->
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("nav");
+            header.classList.toggle("abajo", window.scrollY>0);
+        })
+    </script>    
+
+    <!-- Zona central de la primer pagina -->
+    <section class="zona1">
+		<!--	<img src="./img/pasteleria-super.png" alt="Imagen superpuesta" class="imagen-superpuesta">  -->
+		<div class="container-zona1">
+            <img id="imagenFondo" class="imagen-fondo" src="" alt="Fondo carrusel">
+
+            <div class="contenido">
+                <div class="h1-zona1">
+                    <h1 class="title-main">¡Transporte seguro, siempre a tiempo!</h1>
+                </div>
+                <div class="p-zona1">
+                    <p class="parrafo-main">
+                        En <span>BarArpes</span> Transporte, cada viaje es más que un recorrido: es un compromiso con la confianza y la puntualidad. 
+                        Movemos personas y cargas con la misma dedicación, fusionando eficiencia, seguridad y cercanía. 
+                        Desde envíos particulares hasta grandes operaciones logísticas, cada trayecto refleja quiénes somos y lo que queremos transmitir: 
+                        un servicio que conecta destinos y genera experiencias. 
+                        Transportamos con responsabilidad, avanzamos con precisión y entregamos resultados que hablan por vos, 
+                        incluso antes de llegar a destino.
+                    </p>
+                </div>
+            </div>
+
+		</div>
+	</section>
+
+    <!-- nosotros -->
+    <section id="section-nosotros">
+        <h2 class="title-nosotros">Nosotros</h2>
+
+        <div class="container-nosotros">
+            <div class="container-group">
+                <p class="descripcion">
+                    En <span>BarArpes</span> somos especialistas en transporte, comprometidos con conectar personas y empresas de manera segura, eficiente y confiable. 
+                    Sabemos que cada viaje es más que un recorrido: es una oportunidad para generar confianza y cumplir con tus expectativas.
+                </p>
+            </div>
+
+            <div class="container-group">
+                <p class="descripcion">
+                    Por eso trabajamos cada día para ofrecer un servicio transparente, puntual y adaptado a tus necesidades. 
+                    Nos enfocamos en que cada traslado sea una experiencia positiva, respaldada por nuestra dedicación y profesionalismo.
+                </p>
+            </div>
+
+            <div class="container-group">
+                <p class="descripcion">
+                    Desde 2020, acompañamos a particulares, empresas y emprendedores en sus operaciones logísticas, brindando atención personalizada y soluciones a medida en cada etapa del proceso.
+                </p>
+            </div>
+
+            <div class="container-group">
+                <p class="descripcion">
+                    Nuestra empresa se basa en valores sólidos: confianza, responsabilidad y excelencia. 
+                    Estos principios nos impulsan a innovar y mejorar continuamente nuestros servicios de transporte.
+                </p>
+            </div>
+
+            <div class="container-group">
+                <p class="descripcion">
+                    Nuestro mayor compromiso es que tu carga o tu viaje llegue a destino tal como lo imaginaste: seguro, puntual y con la tranquilidad de estar en buenas manos.
+                </p>
+            </div>
+
+            <div class="container-group">
+                <p class="descripcion">
+                    El proceso es simple: completá tu <a href="index.html#section-form">solicitud de contacto</a>, nos comunicaremos para conocer tus necesidades y te enviaremos propuestas personalizadas. 
+                    Vos elegís la opción que mejor se adapte, y nosotros nos encargamos del resto.
+                </p>
+            </div>
+
+            <div class="container-group">
+                <p class="descripcion">
+                    ¡Nos entusiasma acompañarte en cada trayecto y ser parte de tu camino!
+                </p>
+            </div>
+        </div>
+
+        <div class="abajo-nosotros">
+            <div class="container-group container-firma">
+                <p class="descripcion firma">¡ El Equipo de BarArpes !</p>
+            </div>
+
+            <div class="container-logo">
+                <img src="./img/BarArpes-logo.png" alt="Logo de la empresa">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Section RENUEVA -->
+    <section class="section-renueva">
+        <h2>¡Trabajando!</h2>
+        <div class="container-renueva">
+            <img src="/img/carrusel1.jpg" class="galeria-img1" alt="imagen1">
+            <img src="/img/carrusel2.jpg" class="galeria-img2" alt="imagen2">
+            <img src="/img/carrusel3.jpg" class="galeria-img3" alt="imagen3">
+            <img src="/img/carrusel4.jpg" class="galeria-img4" alt="imagen4">
+        </div>
+        <a href="/galeria.html#container-gallery" class="btn-renueva">Galería</a>
+    </section>
+
+
+    <!-- Preguntas frecuentes -->
+    <section class="questions container" id="questions_id">
+        <h2 class="titulo-preguntas">Preguntas frecuentes</h2>
+        <p class="questions_paragraph">Estas son algunas de las preguntas más 
+            frecuentes que nos hacen sobre nuestros servicios de logística.</p>
+
+        <section class="questions_container">
+            <article class="questions_padding">
+                <div class="questions_answer">
+                    <h3 class="questions_title">¿Qué tipo de cargas transportan?
+                        <span class="questions_arrow">
+                            <img src="/img/arrow.svg" class="questions_img">
+                        </span>
+                    </h3>
+
+                    <p class="questions_show">En nuestra empresa trabajamos con cargas generales, 
+                        productos industriales, materiales de construcción y distribución comercial. 
+                        Adaptamos cada servicio según el tipo de mercancía y las necesidades del cliente.</p>
+                </div>
+            </article>
+
+            <article class="questions_padding">
+                <div class="questions_answer">
+                    <h3 class="questions_title">¿En cuánto tiempo realizan las entregas?
+                        <span class="questions_arrow">
+                            <img src="/img/arrow.svg" class="questions_img">
+                        </span>
+                    </h3>
+
+                    <p class="questions_show">Los tiempos de entrega dependen de la distancia, 
+                        el tipo de servicio contratado y la urgencia del envío. Ofrecemos opciones 
+                        de logística exprés y programada para garantizar puntualidad y eficiencia.</p>
+                </div>
+            </article>
+
+            <article class="questions_padding">
+                <div class="questions_answer">
+                    <h3 class="questions_title">¿La carga está asegurada durante el transporte?
+                        <span class="questions_arrow">
+                            <img src="/img/arrow.svg" class="questions_img">
+                        </span>
+                    </h3>
+
+                    <p class="questions_show">Sí. Todas nuestras operaciones cuentan con cobertura 
+                        de seguro contra daños, pérdidas o accidentes. Además, aplicamos estrictos 
+                        protocolos de seguridad para proteger cada envío.</p>
+                </div>
+            </article>
+
+            <article class="questions_padding">
+                <div class="questions_answer">
+                    <h3 class="questions_title">¿Puedo solicitar un servicio personalizado?
+                        <span class="questions_arrow">
+                            <img src="/img/arrow.svg" class="questions_img">
+                        </span>
+                    </h3>
+
+                    <p class="questions_show">Claro. Diseñamos soluciones logísticas a medida, 
+                        adaptadas a las necesidades de tu empresa. Podés solicitar rutas específicas, 
+                        horarios de entrega o servicios adicionales como almacenamiento y distribución.</p>
+                </div>
+            </article>
+
+            <article class="questions_padding">
+                <div class="questions_answer">
+                    <h3 class="questions_title">¿Cuánto cuesta contratar un servicio de logística?
+                        <span class="questions_arrow">
+                            <img src="/img/arrow.svg" class="questions_img">
+                        </span>
+                    </h3>
+
+                    <p class="questions_show">El costo varía según el tipo de carga, la distancia, 
+                        el volumen y los servicios adicionales requeridos. Podés solicitar tu presupuesto 
+                        sin compromiso desde nuestra web mediante un <a href="#"> formulario </a> o por WhatsApp.</p>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="questions_offer">
+            <h2 class="subtitle2">¡Optimiza tu cadena de suministro con nosotros!</h2>
+            <p class="questions_copy">Nos especializamos en brindar soluciones logísticas integrales 
+                para empresas de distintos rubros. Ofrecemos transporte seguro, almacenamiento eficiente 
+                y distribución estratégica. Nuestro equipo te acompaña en todo el proceso, asegurando 
+                puntualidad, transparencia y confianza. ¡Confiá en nosotros para llevar tu negocio al 
+                siguiente nivel!</p>
+            <a href="precios.html" class="btn-aprende">¡Comencemos!</a>
+        </section>
+    </section>
+
+
+
+    <!-- *********** CLIENTES *********** -->
+    <section id="container-slider">
+        <h2 class="titulo-slider">Clientes</h2>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="/img/clientes/aspenautomotores.jpg" alt="cliente01">
+                    <!-- <h4>ASPEN AUTOMOTORES</h4> -->
+                    <a href="https://www.aspenautomotores.com.ar/" class="btn-ver" target="_blank">ASPEN AUTOMOTORES</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/kavak.jpg" alt="cliente02">
+                    <!-- <h4>KAVAK</h4> -->
+                    <a href="https://www.kavak.com/ar" class="btn-ver" target="_blank">KAVAK</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/betaautomotores.jpg" alt="cliente03">
+                    <!-- <h4>BETA AUTOMOTORES</h4> -->
+                    <a href="https://betachevrolet.com.ar/" class="btn-ver" target="_blank">BETA AUTOMOTORES</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/coto.jpg" alt="cliente04">
+                    <!-- <h4>COTO</h4> -->
+                    <a href="https://www.coto.com.ar/" class="btn-ver" target="_blank">COTO</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/distrishop.jpg" alt="cliente05">
+                    <!-- <h4>DISTRISHOP</h4> -->
+                    <a href="https://www.distrishop.com.uy/" class="btn-ver" target="_blank">DISTRISHOP</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/elombu.jpg" alt="cliente06">
+                    <!-- <h4>EL OMBU</h4> -->
+                    <a href="https://www.caleraelombu.com.ar/" class="btn-ver" target="_blank">EL OMBU</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/hauswagen.jpg" alt="cliente07">
+                    <!-- <h4>HAUSWAGEN</h4> -->
+                    <a href="https://hauswagen.com.ar/" class="btn-ver" target="_blank">HAUSWAGEN</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/ipsa.jpg" alt="cliente08">
+                    <!-- <h4>IPSA</h4> -->
+                    <a href="https://ip-sa.com.ar/" class="btn-ver" target="_blank">IPSA</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/italgas.jpg" alt="cliente09">
+                    <!-- <h4>ITALGAS</h4> -->
+                    <a href="https://www.italgas.com.ar/" class="btn-ver" target="_blank">ITALGAS</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/norauto.jpg" alt="cliente10">
+                    <!-- <h4>NORAUTO</h4> -->
+                    <a href="https://norauto.com.ar/" class="btn-ver" target="_blank">NORAUTO</a>
+                </div>
+                
+
+                <!-- repito las 8 imagenes anteriores -->
+                <div class="slide">
+                    <img src="/img/clientes/aspenautomotores.jpg" alt="cliente01">
+                    <!-- <h4>ASPEN AUTOMOTORES</h4> -->
+                    <a href="https://www.aspenautomotores.com.ar/" class="btn-ver" target="_blank">ASPEN AUTOMOTORES</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/kavak.jpg" alt="cliente02">
+                    <!-- <h4>KAVAK</h4> -->
+                    <a href="https://www.kavak.com/ar" class="btn-ver" target="_blank">KAVAK</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/betaautomotores.jpg" alt="cliente03">
+                    <!-- <h4>BETA AUTOMOTORES</h4> -->
+                    <a href="https://betachevrolet.com.ar/" class="btn-ver" target="_blank">BETA AUTOMOTORES</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/coto.jpg" alt="cliente04">
+                    <!-- <h4>COTO</h4> -->
+                    <a href="https://www.coto.com.ar/" class="btn-ver" target="_blank">COTO</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/distrishop.jpg" alt="cliente05">
+                    <!-- <h4>DISTRISHOP</h4> -->
+                    <a href="https://www.distrishop.com.uy/" class="btn-ver" target="_blank">DISTRISHOP</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/elombu.jpg" alt="cliente06">
+                    <!-- <h4>EL OMBU</h4> -->
+                    <a href="https://www.caleraelombu.com.ar/" class="btn-ver" target="_blank">EL OMBU</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/hauswagen.jpg" alt="cliente07">
+                    <!-- <h4>HAUSWAGEN</h4> -->
+                    <a href="https://hauswagen.com.ar/" class="btn-ver" target="_blank">HAUSWAGEN</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/ipsa.jpg" alt="cliente08">
+                    <!-- <h4>IPSA</h4> -->
+                    <a href="https://ip-sa.com.ar/" class="btn-ver" target="_blank">IPSA</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/italgas.jpg" alt="cliente09">
+                    <!-- <h4>ITALGAS</h4> -->
+                    <a href="https://www.italgas.com.ar/" class="btn-ver" target="_blank">ITALGAS</a>
+                </div>
+                <div class="slide">
+                    <img src="/img/clientes/norauto.jpg" alt="cliente10">
+                    <!-- <h4>NORAUTO</h4> -->
+                    <a href="https://norauto.com.ar/" class="btn-ver" target="_blank">NORAUTO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ********** FORMULARIO ********** -->
+    <section id="section-form">
+        <h2 class="titulo-form">Contacto</h2>
+
+        <div class="container-maps_form">
+            
+            <div class="maps">
+<!--                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4125.233774464203!2d-58.90830704526535!3d-34.45453235870867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9cdaff91a60b%3A0x210325890b9d4d43!2sJuan%20B.%20Justo%20%26%2025%20de%20Mayo%2C%20B1629%20Pilar%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1741993290975!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d501.0737047343138!2d-58.765849691202554!3d-34.43800080479737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sconcordia%20golf%20club%202490%20lagomarsino%20pilar!5e1!3m2!1ses-419!2sar!4v1777651441691!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+            <form id="form-contacto" action="https://formspree.io/f/mvgperpl" method="POST">
+                <p class="anotate">¡Comunicate con nosotros!</p>
+                <input id="nombre" class="nombre" type="text" name="nombre" placeholder="Nombres *">
+
+                <input id="telefono" type="tel" name="telefono" placeholder="Telefono *">
+
+                <input id="email" class="email" type="email" name="email" placeholder="Correo *">
+
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba aquí su mensaje *"></textarea>
+
+                <div class="aceptar">
+                    <label for="check-priv" class="text-priv">
+                        <input type="checkbox" id="check-priv" required>
+                        Acepto se envíen mis datos
+                    </label>
+                </div>
+                <div class="botones">
+                    <input type="submit" class="btn btn-grabar" title="Enviar el formulario" value="Enviar">
+                    <input type="reset" class="btn btn-limpiar" title="Limpia los campos" value="Limpiar">
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+
+    <!-- ********* Seccion de footer ******** -->
+    <footer class="footer-container">
+        <div class="container-box">
+
+            <div class="box-footer">
+                <h3 class="title-box">Horarios</h3>
+                <p class="dias">Lunes a viernes:</p>
+                <p class="horas">08:00 hs a 16:00 hs</p>
+                <br>
+                <p class="dias">Sábados:</p>
+                <p class="horas">08:00 hs a 12:00 hs</p>                
+            </div>
+
+            <div class="box-footer">
+                <h3 class="title-box">Enlaces</h3>
+                <ul>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="#section-nosotros">Nosotros</a></li>
+                    <li><a href="#section-form">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                <h3 class="title-box">Sociales</h3>
+                <div class="sociales">
+                    <a href="https:" target="_blank" title="Ir a Twitter">
+                        <img class="linkedin" src="./img/twitter.png" alt="Twitter"> Twitter
+                    </a>
+                    <a href="https:" target="_blank" title="Ir a Instagram">
+                        <img class="github" src="./img/instagram.png" alt="Instagram"> Instagram
+                    </a>
+                    <a href="https:" target="_blank" title="Ir a Facebook">
+                        <img class="facebook" src="./img/facebook.png" alt="Facebook"> Facebook
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=+543487616158&text=Hola%2C%20me%20gustaría%20realizar%20una%20página%20web...%20podrías%20contarme?" target="_blank" title="Ir a Whatsapp">
+                        <img class="whatsapp" src="./img/Whatsapp.png" alt="Whatsapp">Whatsapp
+                    </a>
+                </div>
+            </div>
+
+            <div class="box-footer">
+                <h3 class="title-box">Otros datos</h3>
+                <div class="otros-datos">
+                    <a href="mailto:jle36@hotmail.com?subject=Consulta&body=Hola%2C%20quisiera%20más%20información%20sobre%20...">
+                        <i class="fa fa-envelope" aria-hidden="true"></i></i>
+                    Email</a>
+                    <p class="telefono"><i class="fa fa-phone" aria-hidden="true"></i> +xx-xx-xxxxxxxx</p>
+                    <p class="direccion"><i class="fa fa-location-arrow" aria-hidden="true"></i> Aquí la dirección</p>
+                    <a class="terminos" href="terminos.html">Términos y condiciones</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- ******** Copyright ******** -->
+        <div class="copy">
+            <!-- <p class="copyright">&copy; <span id="copyright-year"></span> Administración Bourguet - Todos los derechos reservados - Espinola José Luis</p> -->
+            <p class="copyright">&copy; <span id="copyright-year"></span> 
+                BarArpes - Todos los derechos reservados - 
+                <a href="https://portafoliojoseluis.netlify.app/" target="_blank">Espinola José Luis</a>
+            </p>
+
+            <script>
+                const currentYear = new Date().getFullYear();
+                document.getElementById('copyright-year').textContent = currentYear;
+            </script>
+         </div>
+    </footer>
+    <script src="/js/menu.js"></script>
+    <script src="/js/carrusel-main.js"></script>
+    <script src="/js/preguntas.js"></script>
+    <script src="/js/busqueda.js"></script>
+    <script src="/js/valid-contacto.js"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js"
+        crossorigin="anonymcus">
+    </script>
+    <script src="/js/scrollreveal.js"></script>
+</body>
+</html>

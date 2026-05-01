@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="Imagen/jpg" href="/img/logo-auto.png">
+    <link rel="stylesheet" href="/css/nosotros.css">
+    <title>YourStyle</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Incluir la biblioteca de ScrollReveal --> 
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <!-- Barra de navegacion o NavBar -->
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+        <a href="disenador.html" class="enlace">
+            <img src="./img/logo-alquileres.png" class="logo" alt="Imagen Logo">
+            <div class="names">
+                <span class="main-name">Sólo Alquiler</span>
+                <span class="main-namesito">Más que un techo, un hogar</span>
+            </div>
+        </a>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-home" title="Inicio"></i></a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="index.html#section-departamentos">Disponibles</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="fotogaleria.html">Fotogaleria</a></li>
+            <li><a href="precios.html">Precios</a></li>
+            <li><a href="index.html#section-form">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- JavaScript donde se captura la parte de arriba de la pagina: header-->
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("nav");
+            header.classList.toggle("abajo", window.scrollY>0);
+        })
+    </script>    
+
+    <!-- Zona central de la primer pagina -->
+    <section id="zona1">
+        <div class="presentacion">
+            <div class="card-pres text">
+                <h2>¡Encontrá tu próximo hogar!</h2>
+                <p>En Sólo Alquiler, nos dedicamos a conectar personas con departamentos 
+                    cómodos, seguros y bien ubicados. Brindamos confianza, atención 
+                    personalizada y soluciones a medida para que disfrutes de tu nuevo 
+                    espacio.</p>
+                <a class="btn-contacto" href="#section-nosotros">Ver nosotros</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- nosotros -->
+    <section id="section-nosotros">
+        <h2 class="title-nosotros">Nosotros</h2>
+
+        <div class="container-nosotros">
+            <div class="container-group">
+                <p class="descripcion">Como propietarios y especialistas en alquileres, entendemos que encontrar el lugar 
+                    ideal para vivir puede ser un desafío. Queremos que el proceso de mudanza y búsqueda de tu nuevo hogar 
+                    sea simple, seguro y sin estrés. <span>La vida es demasiado corta para preocuparse por trámites complicados.</span>
+                </p>
+            </div>
+
+            <div class="container-group">
+                <p class="descripcion">Por eso, en Sólo Alquiler, trabajamos cada día para que alquilar sea una experiencia 
+                    positiva y transparente.
+                </p>
+            </div>
+
+            <div class="container-group">
+                <p class="descripcion">Desde 2020, hemos ayudado a decenas de familias, estudiantes y profesionales a encontrar 
+                    departamentos cómodos y bien ubicados, siempre con atención personalizada y asesoramiento en cada paso.
+                </p>
+            </div>
+
+            <div class="container-group">
+                <p class="descripcion">Nuestra empresa se basa en la confianza, la honestidad y la excelencia, valores que nos 
+                    permiten crecer y mejorar continuamente nuestros servicios.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-nosotros">
+            <div class="container-group">
+                <p class="descripcion">Nuestro mayor compromiso es ayudarte a encontrar el departamento que se adapte a tus 
+                    necesidades, para que puedas dedicar tu tiempo a lo que realmente importa.
+                </p>
+            </div>
+
+            <div class="container-group">
+                <p class="descripcion">El proceso es muy sencillo: completá tu <a href="index.html#section-form">solicitud de contacto</a>, 
+                    te llamaremos a la brevedad para conocer tus preferencias y te enviaremos opciones personalizadas. Sólo tenés que 
+                    elegir y ¡prepararte para mudarte!
+                </p>
+            </div>
+
+            <div class="container-group">
+                <p class="descripcion">¡Nos entusiasma acompañarte en esta nueva etapa!.</p>
+            </div>
+
+            <div class="container-group container-firma">
+                <p class="descripcion firma">¡ El Equipo de SOLO ALQUILER !.
+                </p>
+            </div>
+
+            <div class="container-logo">
+                <img src="./img/logo-alquileres.png" alt="Logo de la empresa">
+            </div>
+        </div>
+     </section>
+
+
+    <!-- ********* Seccion de footer ******** -->
+    <footer class="footer-container">
+        <div class="container-box">
+
+            <div class="box-footer">
+                <h3 class="title-box">Horarios</h3>
+                <p class="dias">Lunes a viernes:</p>
+                <p class="horas">08:00 hs a 16:00 hs</p>
+                <br>
+                <p class="dias">Sábados:</p>
+                <p class="horas">08:00 hs a 12:00 hs</p>                
+            </div>
+
+            <div class="box-footer">
+                <h3 class="title-box">Enlaces</h3>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="fotogaleria.html">Fotogalería</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="index.html#section-form">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                <h3 class="title-box">Sociales</h3>
+                <div class="sociales">
+                    <a href="https:" target="_blank" title="Ir a Twitter">
+                        <img class="linkedin" src="./img/twitter.png" alt="Twitter"> Twitter
+                    </a>
+                    <a href="https:" target="_blank" title="Ir a Instagram">
+                        <img class="github" src="./img/instagram.png" alt="Instagram"> Instagram
+                    </a>
+                    <a href="https:" target="_blank" title="Ir a Facebook">
+                        <img class="facebook" src="./img/facebook.png" alt="Facebook"> Facebook
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=+543487616158&text=Hola%2C%20me%20gustaría%20realizar%20una%20página%20web...%20podrías%20contarme?" target="_blank" title="Ir a Whatsapp">
+                        <img class="whatsapp" src="./img/Whatsapp.png" alt="Whatsapp">Whatsapp
+                    </a>
+                </div>
+            </div>
+
+            <div class="box-footer">
+                <h3 class="title-box">Otros datos</h3>
+                <div class="otros-datos">
+                    <a href="mailto:jle36@hotmail.com?subject=Consulta&body=Hola%2C%20quisiera%20más%20información%20sobre%20...">
+                        <i class="fa fa-envelope" aria-hidden="true"></i></i>
+                    Email</a>
+                    <p class="telefono"><i class="fa fa-phone" aria-hidden="true"></i> +xx-xx-xxxxxxxx</p>
+                    <p class="direccion"><i class="fa fa-location-arrow" aria-hidden="true"></i> Aquí la dirección</p>
+                    <a class="terminos" href="terminos.html">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+        <!-- ******** Copyright ******** -->
+        <div class="copy">
+            <!-- <p class="copyright">&copy; <span id="copyright-year"></span> Administración Bourguet - Todos los derechos reservados - Espinola José Luis</p> -->
+            <p class="copyright">&copy; <span id="copyright-year"></span> 
+                Sólo Alquiler - Todos los derechos reservados - 
+                <a href="https://portafoliojoseluis.netlify.app/" target="_blank">Espinola José Luis</a>
+            </p>
+
+            <script>
+                const currentYear = new Date().getFullYear();
+                document.getElementById('copyright-year').textContent = currentYear;
+            </script>
+        </div>
+    </footer>
+
+    <script src="/js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js"
+        crossorigin="anonymcus">
+    </script>
+    <script src="/js/scrollreveal.js"></script>
+</body>
+</html>
