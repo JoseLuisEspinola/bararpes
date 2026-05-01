@@ -434,11 +434,12 @@ nav.abajo .checkbtn {
 }
 
 .telefono, .direccion {
-    margin: 10px 0px 10px;
+    margin: 8px 0px 8px;
     color: var(--blanco);
 }
 
-.otros-datos .terminos {
+.otros-datos .terminos,
+.otros-datos .creditos {
     color: var(--amarillo_calido);
 }
 

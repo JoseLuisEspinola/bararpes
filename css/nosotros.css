@@ -355,8 +355,7 @@ nav.abajo .checkbtn {
 .footer-container {
     width: 100%;
     height: auto;
-    color: var(--color10);
-    background-color: var(--color11);
+    background-color: var(--gris_azulado_02);
     /* border-top: 2px solid var(--color03); */
 }
 
@@ -374,18 +373,22 @@ nav.abajo .checkbtn {
 
 .title-box {
     padding: 20px 0px 10px;
+    color: var(--naranja_vibrante);
+    text-shadow: 0 0 10px var(--azul_oscuro_extra),
+                 0 0 20px var(--azul_oscuro_extra),
+                 0 0 30px var(--azul_oscuro_extra)
 }
 
 /* Horarios */
 .dias {
-    color: #80bffa;
-    text-shadow: 0 0 10px #ffffff,
-                 0 0 20px #ffffff,
-                 0 0 30px #ffffff;
+    color: var(--azul_oscuro_extra);
+    text-shadow: 0 0 10px var(--gris_claro),
+                 0 0 20px var(--gris_claro),
+                 0 0 30px var(--gris_claro);
 }
 
 .horas {
-    color: #54aafa;
+    color: var(--blanco);
 }
 
 /* Enlaces */
@@ -394,26 +397,30 @@ nav.abajo .checkbtn {
 }
 
 .box-footer li a {
-    color:#54aafa;
+    color: var(--blanco);
 }
 
 .box-footer li a:hover {
-    color: #2e5f8c;
-    color: var(--color04);
+    color: var(--amarillo_calido);
 }
 
 /* Otros datos */
 .otros-datos a {
-    color: #54aafa;
+    color: var(--blanco);
+}
+
+.otros-datos a:hover {
+    color: var(--amarillo_calido);
 }
 
 .telefono, .direccion {
-    margin: 10px 0px 10px;
-    color: #54aafa;
+    margin: 8px 0px 8px;
+    color: var(--blanco);
 }
 
-.otros-datos .terminos {
-    color: #f3eec3;
+.otros-datos .terminos,
+.otros-datos .creditos {
+    color: var(--amarillo_calido);
 }
 
 /* Sociales */
@@ -425,7 +432,7 @@ nav.abajo .checkbtn {
     padding: 0 4px;
     /* display: inline-block; */
     display: flex;
-    color: #54aafa;
+    color: var(--blanco);
     margin-top: 4px;
 }
 
@@ -437,30 +444,20 @@ nav.abajo .checkbtn {
     transition: 0.5s;
 }
 
-.linkedin:hover, .github:hover,
-.facebook:hover, .whatsapp:hover {
-    box-shadow: 1px 1px 14px 0 #abacaf, -1px -1px 14px 0 #abacaf;
-
+.sociales a:hover {
+    color: var(--amarillo_calido);
 }
 
 /* Copyright */
 .copy {
     text-align: center;
     padding: 16px 0;
-    color: var(--color08);
+    color: var(--rojo_suave);
     font-size: clamp(0.7rem, 3vw, 1rem);
 }
 
 .copyright a {
-    color: var(--color08);
-}
-
-
-
-/*************************************/
-/* ***** Media Query con 1368px ***** */
-@media (max-width: 1368px) {
-    
+    color: var(--rojo_suave);
 }
 
 

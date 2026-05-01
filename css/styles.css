@@ -825,8 +825,7 @@ nav.abajo .checkbtn {
 form {
     max-width: 40%;
     /* margin: auto; */
-    background-color: rgba(15, 107, 165, 0.5);
-    background-color: rgba(25, 1, 36, 0.6);
+    background-color: rgba(138, 139, 139, 0.5);
     padding: 20px 20px 10px 20px;
     box-sizing: border-box;
    /*  margin-top: 50px;
@@ -835,7 +834,8 @@ form {
 }
 
 form p {
-    color: #ffffff;
+    color: var(--blanco);
+    text-shadow: 1px 1px 0px var(--negro_comun);
     text-align: center;
     margin: 0;
     font-size: 1.3rem;
@@ -857,8 +857,8 @@ input, textarea {
     padding: 8px;
     font-size: 16px;
     border: none;
-    border-bottom: 1px solid var(--color03);
-    color: #ffffff;
+    border-bottom: 1px solid var(--celeste_claro);
+    color: var(--blanco);
     background-color: transparent;
 }
 
@@ -876,7 +876,7 @@ textarea {
 }
 
 ::placeholder {
-    color: var(--color10);
+    color: var(--amarillo_calido);
 }
 
 .aceptar {
@@ -888,11 +888,11 @@ textarea {
     width: 18px;
     height: 18px;
     margin: 4px 10px 16px 0px;
-    accent-color: var(--color02);   /* color del check en estado tilde */
+    accent-color: var(--amarillo_calido);   /* color del check en estado tilde */
 }
 
 .text-priv {
-    color: #fff;
+    color: var(--amarillo_calido);
     font-size: clamp(0.938rem, 3vw, 1rem);
 }
 
@@ -906,17 +906,16 @@ textarea {
     font-size: clamp(0.8rem, 2vw + 0.25rem, 1.125rem);
     text-align: center;
     color: #ffffff;
-    background-color: #504f4f;
+    background-color: var(--gris_medio);
     border-radius: 5px;
     border: none;
     margin-bottom: 14px;
     padding: 4px;
-    
     transition: 0.4s;
 }
 
 .btn:hover {
-    background-color: var(--color03);
+    background-color: var(--celeste_claro);
 }
 
 
@@ -985,11 +984,12 @@ textarea {
 }
 
 .telefono, .direccion {
-    margin: 10px 0px 10px;
+    margin: 8px 0px 8px;
     color: var(--blanco);
 }
 
-.otros-datos .terminos {
+.otros-datos .terminos,
+.otros-datos .creditos {
     color: var(--amarillo_calido);
 }
 
