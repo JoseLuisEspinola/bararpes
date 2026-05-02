@@ -377,7 +377,7 @@ nav.abajo .checkbtn {
        display grid, entonces sacamos los 2 
        siguientes renglones */
     max-width: 350px;
-    max-height: 400px;
+    max-height: 440px;
 }
 
 .card:hover {
